@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Add todo 
+ 
+   body
+    header  todos
+      nav.main_nav.main_nav_2#maynav
+        ul
+          li
+            a(href="/todos") add
+          li
+            a(href="/todos/add") add
+    main
+      form(action="/todos/add", method="post")
+        input(name="title" )
+        button(type="submit") addd 
