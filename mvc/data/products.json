@@ -1,1 +1,26 @@
-[{"id":"ed98eb75-9c34-4afe-bef2-bf184c3b0c33","title":"product 1","price":19.99,"image":"https://picsum.photos/200/300?random=1"}]
+[
+  {
+    "id": "ed98eb75-9c34-4afe-bef2-bf184c3b0c33",
+    "title": "product 1",
+    "price": 19.99,
+    "image": "https://picsum.photos/200/300?random=1"
+  },
+  {
+    "title": "product 222",
+    "price": 222,
+    "image": "https://picsum.photos/200/300?random=7152489",
+    "id": "a633da43-fdad-42d2-8e6c-79cd8cc4c45a"
+  },
+  {
+    "title": "eee",
+    "price": 123,
+    "image": "https://picsum.photos/200/300?random=7186029",
+    "id": "eae17dff-1771-4a8e-b62e-8509800f70eb"
+  },
+  {
+    "title": "product 3 ",
+    "price": 33,
+    "image": "https://picsum.photos/200/300?random=8648114",
+    "id": "af21595a-5a83-426f-900e-140309a1d5da"
+  }
+]

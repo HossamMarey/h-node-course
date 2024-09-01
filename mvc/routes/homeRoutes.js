@@ -5,7 +5,8 @@ const rootDir = require("../utils/path");
 
 
 router.get("/", (req, res) => {
-  res.sendFile(path.join(rootDir, "views", "index.html"));
+  // res.sendFile(path.join(rootDir, "views", "index.html"));
+  res.render("index.ejs", { pageTitle: "My Home Page" });
 });
 
 module.exports = router

@@ -2,13 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const productsRoutes = require("./routes/productsRoutes");
 const homeRoutes = require("./routes/homeRoutes");
-
+const path = require("path");
 
 const app = express();
 
 app.set("views", "views");
 app.set("view engine", "ejs");
 
+app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // ROUTES 
@@ -22,6 +23,6 @@ app.use((req, res) => {
 
 
 // START SERVER
-app.listen(5000, () => {
+app.listen(5000, (err) => {
   console.log("server is running on http://localhost:5000");
 });

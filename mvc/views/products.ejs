@@ -1,0 +1,76 @@
+<%- include("includes/topPart" , {pageTitle }) %>
+  <link rel="stylesheet" href="/css/products.css">
+  <%- include("includes/navigation") %>
+    <div class="container">
+
+      <% if(products && products.length> 0) { %>
+        <div class="products">
+
+          <% products.forEach(product=> { %>
+            <a href="/products/<%= product.id %>" class="product">
+              <img src="<%= product.image %>" alt="Product 1">
+              <div class="product-info">
+                <h3 class="product-title">
+                  <%= product.title %>
+                </h3>
+                <p class="product-price">$<%= product.price %>
+                </p>
+                <form action="/products/add-top-cart" method="POST">
+                  <input hidden type="text" value="<%= product.id %>" name="productId">
+                  <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+              </div>
+            </a>
+            <% }) %>
+
+
+        </div>
+        <% } else { %>
+          <div>
+            No Products ...
+          </div>
+
+          <% } %>
+
+
+            <div class="cart">
+              <h2>Shopping Cart</h2>
+              <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+              </div>
+              <div class="cart-total">
+                Total: $0.00
+              </div>
+            </div>
+    </div>
+    <script>
+      // Simple JavaScript to handle adding items to cart
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartItems = document.querySelector('.cart-items');
+      const cartTotal = document.querySelector('.cart-total');
+      const cartCount = document.querySelector('.cart-count');
+      let total = 0;
+      let itemCount = 0;
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const product = button.closest('.product');
+          const title = product.querySelector('.product-title').textContent;
+          const price = parseFloat(product.querySelector('.product-price').textContent.replace('$', ''));
+
+          const cartItem = document.createElement('div');
+          cartItem.classList.add('cart-item');
+          cartItem.innerHTML = `
+                    <span>${title}</span>
+                    <span>$${price.toFixed(2)}</span>
+                `;
+          cartItems.appendChild(cartItem);
+
+          total += price;
+          itemCount++;
+          cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+          cartCount.textContent = itemCount;
+        });
+      });
+    </script>
+    <%- include("includes/bottomPart") %>
