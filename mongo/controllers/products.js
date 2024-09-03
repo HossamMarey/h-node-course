@@ -1,5 +1,6 @@
 const { Cart } = require("../models/cart");
 const { Product } = require("../models/product");
+const User = require("../models/user");
 
 
 module.exports.getProducts = async (req, res) => {
@@ -70,3 +71,30 @@ module.exports.getProduct = async (req, res) => {
   res.render('product.ejs', { pageTitle: "Product Page", product });
 }
 
+
+
+module.exports.addToCart = async (req, res) => {
+
+  try {
+
+    const { userId, products } = req.body
+
+    const user = await User.findById(userId)
+
+    const items = user.cart.items || []
+
+    products.forEach(product => {
+      items.push({ product: product.productId, quantity: product.quantity })
+    })
+
+    if (!user) return res.status(404).send("User Not Found")
+
+    user.cart.items = items
+    const resp = await user.save()
+
+    res.send(resp)
+
+  } catch (error) {
+    res.status(500).send(error)
+  }
+}
