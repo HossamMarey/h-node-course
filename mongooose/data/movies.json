@@ -1,0 +1,253 @@
+[
+  {
+    "title": "The Hunger Games",
+    "description": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+    "image": "/images/hunger-games.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2012,
+    "rating": 7.2,
+    "price": 200
+  },
+  {
+    "title": "Inception",
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "image": "/images/inception.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2010,
+    "rating": 8.8,
+    "price": 250
+  },
+  {
+    "title": "The Dark Knight",
+    "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+    "image": "/images/dark-knight.jpg",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "year": 2008,
+    "rating": 9.0,
+    "price": 300
+  },
+  {
+    "title": "Interstellar",
+    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "image": "/images/interstellar.jpg",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": 2014,
+    "rating": 8.6,
+    "price": 280
+  },
+  {
+    "title": "The Matrix",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "image": "/images/matrix.jpg",
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "year": 1999,
+    "rating": 8.7,
+    "price": 220
+  },
+  {
+    "title": "Forrest Gump",
+    "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
+    "image": "/images/forrest-gump.jpg",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1994,
+    "rating": 8.8,
+    "price": 180
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "image": "/images/shawshank-redemption.jpg",
+    "genre": [
+      "Drama"
+    ],
+    "year": 1994,
+    "rating": 9.3,
+    "price": 250
+  },
+  {
+    "title": "Pulp Fiction",
+    "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "image": "/images/pulp-fiction.jpg",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 1994,
+    "rating": 8.9,
+    "price": 230
+  },
+  {
+    "title": "Fight Club",
+    "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+    "image": "/images/fight-club.jpg",
+    "genre": [
+      "Drama"
+    ],
+    "year": 1999,
+    "rating": 8.8,
+    "price": 210
+  },
+  {
+    "title": "The Godfather",
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "image": "/images/godfather.jpg",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "year": 1972,
+    "rating": 9.2,
+    "price": 300
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "image": "/images/lotr-fellowship.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "year": 2001,
+    "rating": 8.8,
+    "price": 270
+  },
+  {
+    "title": "Star Wars: Episode IV - A New Hope",
+    "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee, and two droids to save the galaxy from the Empire's world-destroying battle station.",
+    "image": "/images/star-wars.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "year": 1977,
+    "rating": 8.6,
+    "price": 260
+  },
+  {
+    "title": "The Lion King",
+    "description": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+    "image": "/images/lion-king.jpg",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Drama"
+    ],
+    "year": 1994,
+    "rating": 8.5,
+    "price": 200
+  },
+  {
+    "title": "Gladiator",
+    "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "image": "/images/gladiator.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "year": 2000,
+    "rating": 8.5,
+    "price": 240
+  },
+  {
+    "title": "Jurassic Park",
+    "description": "A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+    "image": "/images/jurassic-park.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 1993,
+    "rating": 8.1,
+    "price": 220
+  },
+  {
+    "title": "Titanic",
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "image": "/images/titanic.jpg",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "year": 1997,
+    "rating": 7.9,
+    "price": 250
+  },
+  {
+    "title": "Avatar",
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "image": "/images/avatar.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "year": 2009,
+    "rating": 7.8,
+    "price": 270
+  },
+  {
+    "title": "The Avengers",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "image": "/images/avengers.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2012,
+    "rating": 8.0,
+    "price": 260
+  },
+  {
+    "title": "Toy Story",
+    "description": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+    "image": "/images/toy-story.jpg",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "year": 1995,
+    "rating": 8.3,
+    "price": 200
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "description": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+    "image": "/images/silence-lambs.jpg",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "year": 1991,
+    "rating": 8.6,
+    "price": 240
+  }
+]
