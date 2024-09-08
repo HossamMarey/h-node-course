@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const initDB = async () => {
   try {
 
-    const MONGO_URI = "mongodb+srv://admin:<Password>@storecluster.gbghg.mongodb.net/store?retryWrites=true&w=majority"
+    // remove '-example' to be .env adn add db uri to it 
+    const MONGO_URI = process.env.MONGO_URI
 
     // const MONGO_URI = 'mongodb://localhost:27017/store';
     await mongoose.connect(MONGO_URI, {
@@ -16,6 +17,5 @@ const initDB = async () => {
     console.log('Mongodb error', error)
   }
 }
-
 
 module.exports = initDB

@@ -1,12 +1,19 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const dotenv = require("dotenv");
+
+
 
 const initDB = require('./db')
+
+
 
 // IMPORT ROUTES
 const moviesRoutes = require("./routes/moviesRoutes");
 
+
+dotenv.config()
 // INIT APP
 const app = express();
 
@@ -17,6 +24,7 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "uploads")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json())
 
