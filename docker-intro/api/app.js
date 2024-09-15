@@ -24,7 +24,9 @@ app.use(cors({
 // app.use(helmet());
 // escape-html
 
-const getUsers = () => undefined
+const getUsers = () => [{
+  name: 'John', email: 'johndoe@me.com', password: 'ssffffs'
+}]
 
 app.get('/users', asyncHandler(async (req, res, next) => {
   const users = getUsers()
@@ -33,7 +35,8 @@ app.get('/users', asyncHandler(async (req, res, next) => {
     throw new AppError(NO_USERS, 'Users not found !!', 404)
   }
   res.json({
-    message: "Hello world"
+    message: "Hello world",
+    users
   })
 }))
 

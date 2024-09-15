@@ -1,0 +1,28 @@
+name: mern-app
+version: "1.0"
+
+services:
+  mongo:
+    image: mongo:7.0
+    ports:
+      - 27017:27017
+    networks:
+      - mern-app
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./api/.env
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+    ports:
+      - 5000:5000
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
+networks:
+  mern-app:
+    driver: bridge
